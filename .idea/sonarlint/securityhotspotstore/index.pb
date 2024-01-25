@@ -63,3 +63,9 @@ l
 <src/main/java/com/muhammet/controller/YarismaController.java,7/2/7283be1cd4938579c0af9195bcff8e33691b0706
 n
 >src/main/java/com/muhammet/dto/request/RegisterRequestDto.java,e/c/ec5aaf3667c053a051ad6842ce89182d51b4dc21
+m
+=src/main/java/com/muhammet/dto/request/SoruAddRequestDto.java,e/c/ec9a0c28a32eef5887543aa00b0878105a0a2ed7
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
