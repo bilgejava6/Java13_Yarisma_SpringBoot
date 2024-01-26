@@ -11,8 +11,6 @@ c
 3src/main/java/com/muhammet/exception/ErrorType.java,1/5/151b1006136248a893d9d16a821f2eca2f3c76e0
 p
 @src/main/java/com/muhammet/exception/GlobalExceptionHandler.java,7/5/7590e68a51664049690d44b9787aca2402634062
-q
-Asrc/main/java/com/muhammet/exception/OkulOtomasyonuException.java,4/3/43af53dcedc44f6319ff0f7a09057358068ff569
 m
 =src/main/java/com/muhammet/exception/YarismaAppException.java,d/b/db0fea5a704ac8c03b76f152c5ec4d680c6ee34d
 [
@@ -69,3 +67,13 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+d
+4src/main/java/com/muhammet/config/DefaultConfig.java,3/6/36dce4acd9c0fc92895622aff11a5cedc60dfdaf
+r
+Bsrc/main/java/com/muhammet/dto/response/SoruGetAllResponseDto.java,7/2/725aafd22cfca9d5f6c87a53ed15c6cc0f606d20
+a
+1src/main/java/com/muhammet/mapper/SoruMapper.java,2/9/29cd76cd7d43eebc793b7afd924df9995b19e5d4
+d
+4src/main/java/com/muhammet/entity/views/VwCevap.java,a/a/aabadf86c62afb1b30e6317e3b4a8e331e86dae0
+c
+3src/main/java/com/muhammet/entity/views/VwSoru.java,7/4/7439e5b6e84a05446bf159a89e0612c362158493

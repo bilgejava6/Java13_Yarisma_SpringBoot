@@ -1,6 +1,5 @@
-package com.muhammet.entity;
+package com.muhammet.entity.views;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,13 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
-@Table(name = "tbl_cevap")
-public class Cevap {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    Long soruId;
+public class VwCevap {
     String cevap;
     String secenekNo;
     boolean dogruCevap;
