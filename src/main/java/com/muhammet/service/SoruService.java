@@ -39,23 +39,20 @@ public class SoruService {
         List<SoruGetAllResponseDto> result = new ArrayList<>();
         if(Objects.isNull(id)){
             List<VwSoru> allView = soruRepository.findAllView(); // bütün soruların listesi
-            allView.forEach(vwSoru -> {
-                List<VwCevap> allCevapList = cevapRepository.findAllBySoruIdView(vwSoru.getId());// sorunun cevap listesi
-                SoruGetAllResponseDto dto = SoruGetAllResponseDto.builder() // dto oluşturuyoruz.
-                        .soru(vwSoru)
-                        .cevaplar(allCevapList)
-                        .build();
-                result.add(dto); // dto yu dönüş listesine ekliyoruz.
-            });
+            allView.forEach(vwSoru -> addResult(vwSoru, result));
         }else{
-            VwSoru tekSoru = soruRepository.findAllByIdView(id);
-            List<VwCevap> sorununCevapListesi = cevapRepository.findAllBySoruIdView(id);
-            SoruGetAllResponseDto dto = SoruGetAllResponseDto.builder()
-                    .soru(tekSoru)
-                    .cevaplar(sorununCevapListesi)
-                    .build();
-            result.add(dto);
+            VwSoru vwSoru = soruRepository.findAllByIdView(id);
+            addResult(vwSoru, result);
         }
         return result;
+    }
+
+    private void addResult(VwSoru vwSoru, List<SoruGetAllResponseDto> result) {
+        List<VwCevap> allCevapList = cevapRepository.findAllBySoruIdView(vwSoru.getId());
+        SoruGetAllResponseDto dto = SoruGetAllResponseDto.builder()
+                .soru(vwSoru)
+                .cevaplar(allCevapList)
+                .build();
+        result.add(dto);
     }
 }
